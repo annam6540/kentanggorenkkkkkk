@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriedPotatoHub - Kentang Goreng Enak di Monas Jakarta</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'); /* Placeholder gambar kentang goreng */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            position: relative;
+            z-index: 1;
+            font-size: 2.5em;
+        }
+        .hero p {
+            position: relative;
+            z-index: 1;
+            font-size: 1.2em;
+        }
+        .menu {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .menu h2 {
+            color: #ff6600;
+            margin-bottom: 30px;
+        }
+        .menu-item {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            margin: 15px;
+            color: #333;
+        }
+        .menu-item p {
+            margin: 0 15px 15px;
+            color: #666;
+        }
+        .contact {
+            background-color: #fff3e0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            color: #ff6600;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FriedPotatoHub</h1>
+        <p>Kentang Goreng Renyah & Enak di Monas, Jakarta Pusat</p>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Selamat Datang di FriedPotatoHub!</h1>
+            <p>Nikmati kentang goreng crispy dengan berbagai variasi rasa. Cocok untuk camilan di Monas!</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Daftar Menu</h2>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kentang Goreng Klasik">
+            <h3>Kentang Goreng Klasik</h3>
+            <p>Kentang goreng renyah dengan garam asin. Kecil: Rp10.000, Sedang: Rp15.000, Besar: Rp20.000</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kentang Goreng Pedas">
+            <h3>Kentang Goreng Pedas</h3>
+            <p>Dengan taburan cabai dan rempah pedas. Kecil: Rp12.000, Sedang: Rp18.000</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1541599468348-e96984315621?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kentang Goreng Keju">
+            <h3>Kentang Goreng Keju</h3>
+            <p>Dilapisi keju cheddar cair. Kecil: Rp14.000, Sedang: Rp20.000</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Paket Keluarga">
+            <h3>Paket Keluarga</h3>
+            <p>Kentang goreng besar + 2 variasi + minuman. Rp28.000</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Pesan sekarang dan ambil di Monas Jakarta Pusat!</p>
+        <a href="https://wa.me/6281234567890" target="_blank">WhatsApp: +6281234567890</a>
+        <a href="https://instagram.com/FriedPotatoHub" target="_blank">Instagram: @FriedPotatoHub</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 FriedPotatoHub. UMKM Kentang Goreng di Jakarta. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
